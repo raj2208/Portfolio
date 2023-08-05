@@ -284,8 +284,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
-  color: #fff;
+/* a.Resume {
+  background-color: #11e10d;
+  color: #4a1717;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+a.Resume:hover {
+  background-color: #306bb5;
+} */
+.banner a {
+  color: #dd2424;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -358,7 +374,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 12%;
   position: absolute;
   bottom: 0;
   width: 40%;
@@ -661,8 +677,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 a.Resume {
-  background-color: #11e10d;
-  color: #4a1717;
+  background-color: #bff04c;
+  color: #054e4a;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -671,8 +687,11 @@ a.Resume {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-bottom: 30px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 a.Resume:hover {
-  background-color: #306bb5;
+  background-color: #233143;
+  color: #ffffff;
 }

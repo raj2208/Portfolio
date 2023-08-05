@@ -7,14 +7,6 @@ export const ProjectCard = ({
   link,
   githubRepo,
 }) => {
-  const openLink = () => {
-    window.location.href = link;
-  };
-
-  const openGithubRepo = () => {
-    window.location.href = githubRepo;
-  };
-
   return (
     <Col xs={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -25,12 +17,13 @@ export const ProjectCard = ({
             <span>{description}</span>
           </div>
           <div className="btn-group mt-3">
-            <button className="btn btn-primary" onClick={openLink}>
-              Visit Website
-            </button>
-            <button className="btn btn-secondary" onClick={openGithubRepo}>
-              GitHub
-            </button>
+            {/* Use anchor tags with target="_blank" */}
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-primary">Visit Website</button>
+            </a>
+            <a href={githubRepo} target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-secondary">GitHub</button>
+            </a>
           </div>
         </div>
       </div>

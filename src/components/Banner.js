@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/rajphoto.png";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import headerImg from "../assets/img/rajphoto2.png";
+// import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
+
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
@@ -10,21 +11,12 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Full Stack"];
+  // const [index, setIndex] = useState(1);
+  // const toRotate = ["Web Developer", "Full Stack"];
   const period = 2000; //period between each letter
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta); //delta is the time period when ticker fires off
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
+  const toRotate = useMemo(() => ["Web Developer", "Full Stack"], []);
+  const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -39,17 +31,27 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
+      // setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1); //go to the next word in the array
-      setIndex(1);
+      // setIndex(1);
       setDelta(500);
     } else {
-      setIndex((prevIndex) => prevIndex + 1);
+      // setIndex((prevIndex) => prevIndex + 1);
     }
-  };
+  }, [loopNum, isDeleting, text, toRotate, period]);
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta); //delta is the time period when ticker fires off
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text, delta, tick]);
 
   return (
     <section className="banner" id="home">
@@ -76,15 +78,15 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    I am a soon-to-be graduate from a prestigious institution,
+                    UVCE. I am looking for a place to show my skills as a
+                    computer science graduate and continuously learn and adapt
+                    to new opportunities and challenges.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+
+                  <a href="/Resume.pdf" download={true} className="Resume">
+                    My Resume
+                  </a>
                 </div>
               )}
             </TrackVisibility>
@@ -97,7 +99,15 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img
+                    src={headerImg}
+                    alt="Header Img"
+                    style={{
+                      maxWidth: "350px",
+                      maxHeight: "350px",
+                      borderRadius: "50%",
+                    }}
+                  />
                 </div>
               )}
             </TrackVisibility>

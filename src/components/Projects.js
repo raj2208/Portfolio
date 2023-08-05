@@ -1,8 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import notesimg from "../assets/img/notesimg.png";
+import weatherimg from "../assets/img/weatherimg.png";
+import stopwatchimg from "../assets/img/stopwatchimg.png";
+import drawingimg from "../assets/img/drawingimg.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,17 +12,18 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Notes App Online",
+      description:
+        "Using MERN stack to create a online notes applicaiton with user authentication",
+      imgUrl: notesimg,
       link: "https://www.google.com/",
       githubRepo: "https://www.youtube.com/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      link: "htts://google.com",
+      title: "Weather Forecast App",
+      description: "Using ReactJs ",
+      imgUrl: weatherimg,
+      link: "https://raj-weather-app.netlify.app/",
       githubRepo: "https://www.youtube.com/",
     },
     {
@@ -33,16 +36,16 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
-      link: "htts://google.com",
-      githubRepo: "https://www.youtube.com/",
+      imgUrl: stopwatchimg,
+      link: "https://stopwatch-raj.netlify.app/",
+      githubRepo: "https://github.com/raj2208/StopWatch-Application",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
-      link: "htts://google.com",
-      githubRepo: "https://www.youtube.com/",
+      imgUrl: drawingimg,
+      link: "https://drawing-app-raj.netlify.app/",
+      githubRepo: "https://github.com/raj2208/Drawing-App",
     },
     {
       title: "Business Startup",
@@ -67,11 +70,8 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Here are some of the my projects. <br /> Hover over them to
+                    visit the site or the source code in github.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -126,7 +126,11 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img
+        alt="bgimage"
+        className="background-image-right"
+        src={colorSharp2}
+      ></img>
     </section>
   );
 };
