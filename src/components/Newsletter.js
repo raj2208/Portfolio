@@ -1,4 +1,4 @@
-import { Col, Row, Alert } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 export const Newsletter = () => {
   return (
