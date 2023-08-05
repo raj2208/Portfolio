@@ -75,19 +75,19 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a href="https://www.google.com/">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.google.com/">
                   <img
                     // className="large-icon"
                     // style={{ width: "19px", height: "19px" }}
                     src={navIcon2}
-                    alt=""
+                    alt="hello"
                   />
                 </a>
-                <a href="#">
-                  <img src={navIcon3} alt="" />
+                <a href="https://www.google.com/">
+                  <img src={navIcon3} alt="hello" />
                 </a>
               </div>
               <HashLink to="#connect">
