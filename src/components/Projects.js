@@ -18,40 +18,41 @@ export const Projects = () => {
       description:
         "Using MERN stack to create a online notes applicaiton with user authentication",
       imgUrl: notesimg,
-      link: "undeployed-raj.netlify.app",
+      link: "https://undeployed-raj.netlify.app/",
       githubRepo: "https://github.com/raj2208/Notes-App-MERN",
     },
     {
       title: "Weather Forecast App",
-      description: "Using ReactJs ",
+      description: "Using ReactJs to create a Weather Forecasting app",
       imgUrl: weatherimg,
       link: "https://raj-weather-app.netlify.app/",
       githubRepo: "https://www.youtube.com/",
     },
     {
       title: "Expense App MERN",
-      description: "Design & Development",
+      description:
+        "Using MERN stack to create a expense management app with user login",
       imgUrl: expenseimg,
-      link: "undeployed-raj.netlify.app",
-      githubRepo: "https://www.youtube.com/",
+      link: "https://undeployed-raj.netlify.app/",
+      githubRepo: "https://undeployed-raj.netlify.app/",
     },
     {
       title: "Stopwatch App",
-      description: "Design & Development",
+      description: "Using jQuery and Bootstrap",
       imgUrl: stopwatchimg,
       link: "https://stopwatch-raj.netlify.app/",
       githubRepo: "https://github.com/raj2208/StopWatch-Application",
     },
     {
       title: "Drawing App",
-      description: "Design & Development",
+      description: "Using Bootstrap and HTML Canvas",
       imgUrl: drawingimg,
       link: "https://drawing-app-raj.netlify.app/",
       githubRepo: "https://github.com/raj2208/Drawing-App",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Maths Game",
+      description: "Maths game using Javacript",
       imgUrl: mathsgameimg,
       link: "https://raj-maths-game.netlify.app/",
       githubRepo: "https://github.com/raj2208/Maths-Game",
@@ -106,23 +107,19 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cumque quam, quod neque provident velit, rem
-                            explicabo excepturi id illo molestiae blanditiis,
-                            eligendi dicta officiis asperiores delectus quasi
-                            inventore debitis quo.
-                          </p>
+                          {/* <p>
+                            More projects here
+                          </p> */}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
+                        {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
                           inventore debitis quo.
-                        </p>
+                        </p> */}
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
