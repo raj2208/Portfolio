@@ -1,8 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg3 from "../assets/img/project-img3.png";
+
+import expenseimg from "../assets/img/expenseimg.png";
 import notesimg from "../assets/img/notesimg.png";
 import weatherimg from "../assets/img/weatherimg.png";
+import mathsgameimg from "../assets/img/mathsgameimg.png";
 import stopwatchimg from "../assets/img/stopwatchimg.png";
 import drawingimg from "../assets/img/drawingimg.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -16,8 +18,8 @@ export const Projects = () => {
       description:
         "Using MERN stack to create a online notes applicaiton with user authentication",
       imgUrl: notesimg,
-      link: "https://www.google.com/",
-      githubRepo: "https://www.youtube.com/",
+      link: "undeployed-raj.netlify.app",
+      githubRepo: "https://github.com/raj2208/Notes-App-MERN",
     },
     {
       title: "Weather Forecast App",
@@ -27,21 +29,21 @@ export const Projects = () => {
       githubRepo: "https://www.youtube.com/",
     },
     {
-      title: "Business Startup",
+      title: "Expense App MERN",
       description: "Design & Development",
-      imgUrl: projImg3,
-      link: "htts://google.com",
+      imgUrl: expenseimg,
+      link: "undeployed-raj.netlify.app",
       githubRepo: "https://www.youtube.com/",
     },
     {
-      title: "Business Startup",
+      title: "Stopwatch App",
       description: "Design & Development",
       imgUrl: stopwatchimg,
       link: "https://stopwatch-raj.netlify.app/",
       githubRepo: "https://github.com/raj2208/StopWatch-Application",
     },
     {
-      title: "Business Startup",
+      title: "Drawing App",
       description: "Design & Development",
       imgUrl: drawingimg,
       link: "https://drawing-app-raj.netlify.app/",
@@ -50,9 +52,9 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
-      link: "htts://google.com",
-      githubRepo: "https://www.youtube.com/",
+      imgUrl: mathsgameimg,
+      link: "https://raj-maths-game.netlify.app/",
+      githubRepo: "https://github.com/raj2208/Maths-Game",
     },
   ];
 
@@ -104,9 +106,13 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cumque quam, quod neque provident velit, rem
+                            explicabo excepturi id illo molestiae blanditiis,
+                            eligendi dicta officiis asperiores delectus quasi
+                            inventore debitis quo.
+                          </p>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">

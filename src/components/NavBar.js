@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/rajlogo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/githubbb.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon3 from "../assets/img/icons8-mail-100.png";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -75,19 +75,31 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.google.com/">
-                  <img src={navIcon1} alt="" />
+                <a
+                  href="https://www.linkedin.com/in/raj-kumar-rai-857b67177/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={navIcon1} alt="linkedin_icon" />
                 </a>
-                <a href="https://www.google.com/">
+                <a
+                  href="https://github.com/raj2208"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     // className="large-icon"
                     // style={{ width: "19px", height: "19px" }}
                     src={navIcon2}
-                    alt="hello"
+                    alt="github_icon"
                   />
                 </a>
-                <a href="https://www.google.com/">
-                  <img src={navIcon3} alt="hello" />
+                <a
+                  href="mailto:rajkrai22@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={navIcon3} alt="mail" />
                 </a>
               </div>
               <HashLink to="#connect">

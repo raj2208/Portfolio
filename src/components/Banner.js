@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/rajphoto2.png";
+import rajcropimg from "../assets/img/rajcropimg.png";
+
 // import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 
@@ -100,7 +101,7 @@ export const Banner = () => {
                   }
                 >
                   <img
-                    src={headerImg}
+                    src={rajcropimg}
                     alt="Header Img"
                     style={{
                       maxWidth: "350px",
