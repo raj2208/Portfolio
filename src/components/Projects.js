@@ -14,6 +14,14 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Expense App MERN",
+      description:
+        "Using MERN stack to create a expense management app with user login",
+      imgUrl: expenseimg,
+      link: "https://tame-dirndl-ray.cyclic.app",
+      githubRepo: "https://github.com/raj2208/Expense-Tracker-MERN",
+    },
+    {
       title: "Notes App Online",
       description:
         "Using MERN stack to create a online notes applicaiton with user authentication",
@@ -28,14 +36,7 @@ export const Projects = () => {
       link: "https://raj-weather-app.netlify.app/",
       githubRepo: "https://www.youtube.com/",
     },
-    {
-      title: "Expense App MERN",
-      description:
-        "Using MERN stack to create a expense management app with user login",
-      imgUrl: expenseimg,
-      link: "https://undeployed-raj.netlify.app/",
-      githubRepo: "https://undeployed-raj.netlify.app/",
-    },
+
     {
       title: "Stopwatch App",
       description: "Using jQuery and Bootstrap",
