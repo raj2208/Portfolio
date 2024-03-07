@@ -79,10 +79,10 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I am a soon-to-be graduate from a prestigious institution,
-                    UVCE. I am looking for a place to show my skills as a
-                    computer science graduate and continuously learn and adapt
-                    to new opportunities and challenges.
+                    I am a recent graduate from a prestigious institution, UVCE.
+                    I am looking for a place to show my skills as a computer
+                    science graduate and continuously learn and adapt to new
+                    opportunities and challenges.
                   </p>
 
                   <a href="/Resume.pdf" download={true} className="Resume">
